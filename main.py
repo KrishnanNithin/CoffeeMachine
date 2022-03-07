@@ -53,7 +53,7 @@ while True:
                 print("Sorry, that's not enough money. Money refunded")
             else:
                 resources["money"] += MENU[command]["cost"]
-                print(f'Here is ${round(value-int(MENU[command]["cost"]), 2)} dollars in change')
+                print(f'Here is {round(value-int(MENU[command]["cost"]), 2)}$ dollars in change')
                 if command.casefold() == "latte" or command.casefold() == "cappuccino":
                     resources["milk"] -= MENU[command]['ingredients']["milk"]
                 resources["water"] -= MENU[command]['ingredients']['water']
